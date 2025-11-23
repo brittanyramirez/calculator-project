@@ -1,0 +1,201 @@
+/*styles entire body//background img*/
+body{
+    height: auto;
+    width: 100%;
+    background-image: url(images/calc-background.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*styles the header overall*/
+.header {
+    width: 100%;
+    background: rgba(43, 194, 249, 0.9);
+    padding: 15px 30px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+/*math magic*/
+.title {
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    
+}
+/*nav bar - horizontal */
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/*helps w size and underline*/
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+   transition: 0.2s ease;
+}
+
+.navbar ul li a:hover{
+    background: rgba(255,255,255,0.3);
+}
+
+main {
+  text-align: center;
+  padding-top: 180px;
+}
+
+main img{
+    width: 280px;
+    height: auto;
+    margin: 20px; /*space between each image*/
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+main img:hover {
+    transform: scale(1.06); /*zoom when hover*/
+}
+
+main p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.resources{
+    text-align: center;
+    padding: 40px 20px;
+}
+/*3 math resources*/
+.resources h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: black;
+}
+/*paragraph under title*/
+.resources p{
+    font-size: 20px;
+    margin: 0 auto 30px;
+    background: rgba(102, 232, 121, 0.8);
+    padding: 12px 25px;
+    border-radius: 10px;
+    width: fit-content;
+    font-weight: 500;
+}
+/*helps cards horizontal and adds space*/
+.resource-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+/*styles the cards for resources*/
+.resource-list li {
+    width: 85%;
+    max-width: 150px;
+    background: rgba(102, 232, 121, 0.8);
+    padding:25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resource-list li:hover{
+    transform: scale(1.03);
+}
+/*styles website imgs*/
+.resource-list img{
+    width: 160px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+/*styles the header of resource img*/
+.resource-list a{
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(0,90, 160);
+    font-weight: bold;
+    margin-top: 5px;
+}
+/*adds hover effect*/
+.resource-list a:hover{
+    text-decoration: underline;
+}
+
+section{
+    margin-bottom: 60px;
+}
+/*mobile*/
+@media (max-width: 480px) {
+    .title{
+        font-size: 32px;
+    }
+
+    .navbar ul li a{
+        font-size: 18px;
+    }
+
+    main img{
+        width: 180px;
+    }
+
+    .resource-list li {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .resource-list img{
+        width: 130px;
+    }
+
+    .resource-list a {
+        font-size: 18px;
+    }
+}
+/*tablet responsiveness*/
+@media (max-width: 768px) {
+    .title {
+        font-size: 42px;
+    }
+
+    .navbar ul li a {
+        font-size: 20px;
+    }
+
+    main img{
+        width: 220px;
+    }
+
+    .resource-list li {
+        width: 90%;
+    }
+}

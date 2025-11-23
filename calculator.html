@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    
+</head>
+
+<body> 
+  <header class="header">
+        <div class="title">Math Magic</div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="resource.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="calc">
+        <div class="top">
+            <input type="text" id="screen" placeholder="Enter value here">
+        </div>
+        <div class="bottom">
+            <button onclick="input('1')">1</button>
+            <button onclick="input('2')">2</button>
+            <button onclick="input('3')">3</button>
+            <button class="special" onclick="clearScreen()">C</button>
+            <button onclick="input('4')">4</button>
+            <button onclick="input('5')">5</button>
+            <button onclick="input('6')">6</button>
+            <button class="special" onclick="deleteLast()">DEL</button>
+            <button onclick="input('7')">7</button>
+            <button onclick="input('8')">8</button>
+            <button onclick="input('9')">9</button>
+            <button class="special" onclick="input('.')">.</button>
+            <button class="special" onclick="input('+')">+</button>
+            <button onclick="input('0')">0</button>
+            <button class="special" onclick="input('-')">-</button>
+            <button class="special" onclick="input('/')">/</button>
+            <button class="special" onclick="input('(')">(</button>
+            <button class="special" onclick="input(')')">)</button>
+            <button class="special" onclick="calculate()">=</button>
+            <button class="special" onclick="input('%')">%</button>
+            <button class="special" onclick="input('*')">*</button>
+            <button class="special" onclick="squareRoot()">√</button>
+            <button class="special" onclick="power()">xʸ</button>
+            <button class="special" onclick="pi()">π</button>
+        </div>
+    </div>
+
+    <footer></footer>
+    <script src="calculator.js"></script>
+</body>
+</html>

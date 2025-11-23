@@ -1,0 +1,144 @@
+body{
+    height: auto;
+    min-width: 100vh;
+    width: 100%;
+    background-image: url(images/calc-background.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 140px ;
+}
+
+.header {
+    width: 100%;
+    background: rgba(43, 194, 249, 0.9);
+    padding: 15px 30px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.title {
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+   transition: 0.2s ease;
+}
+
+.navbar ul li a:hover{
+    background: rgba(255,255,255,0.3);
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main{
+    text-align: center;
+}
+
+.bio img{
+    width: 250px;
+    height: auto; /*this keeps proportions correct*/
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 20px; /*centers the images*/
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 200px;
+    }
+    .title {
+        font-size: 32px;
+}
+
+    .navbar ul {
+        gap: 12px;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 18px;
+        max-width: 90%;
+    }
+
+    .bio img{
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 170px;
+    }
+    .title {
+        font-size: 42px;
+    }
+
+    .navbar ul {
+        gap: 18px;
+    }
+
+    .navbar ul li a {
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 34px;
+    }
+
+    p {
+        font-size: 20px;
+        max-width: 90%;
+    }
+
+    .bio img{
+        width: 210px;
+    }
+}

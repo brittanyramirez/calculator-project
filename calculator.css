@@ -1,0 +1,157 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/calc-background.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.header {
+    width: 100%;
+    background: rgba(43, 194, 249, 0.9);
+    padding: 15px 30px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.title {
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+   transition: 0.2s ease;
+}
+
+.navbar ul li a:hover{
+    background: rgba(255,255,255,0.3);
+}
+
+/*main calculator box*/
+.calc{
+    height: 520px;
+    width: 450px;
+    backdrop-filter: blur(6px);
+    padding: 15px;
+    box-shadow: 0 0 10px black;
+    border-radius: 17px;
+  
+}
+
+#screen{
+    height: 100%;
+    width: 100%;
+    background: none;
+    font-size: 30px;
+    text-align: right;
+    padding: 9px;
+    border-radius: 8px;
+}
+/*button grid*/
+.bottom{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button{
+    height: 73px;
+    width: 25%;
+    border: none;
+    background-color: lightblue;
+    font-size: 32px;
+   
+}
+button:hover{
+    background-color: rgb(127, 179, 202);
+}
+
+.special{
+    background-color: rgb(108, 148, 161);
+}
+
+/*mobile responsiveness*/
+@media (max-width: 480px) {
+    .calc{
+        width: 90vw;
+        height: auto;
+        padding: 10px;
+    }
+
+    #screen { 
+        font-size: 22px;
+        padding: 8px;
+    }
+
+    button{
+        width: 22%;
+        height: 55px;
+        font-size: 22px;
+        margin: 2px;
+    }
+    
+}
+
+/*tablet version 481-768 px*/
+@media (max-width: 768px) {
+    .calc {
+        width: 70vw;
+        height: auto;
+        padding: 15px;
+    }
+   
+    #screen {
+        font-size: 26px;
+        padding: 10px;
+    }
+
+    button {
+        width: 22%;
+        height: 65px;
+        font-size: 26px;
+        margin: 3px;
+    }
+}

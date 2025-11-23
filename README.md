@@ -1,4 +1,5 @@
 Math Magic! Math Magic is an interactive, beginner friendly web project designed to help users practice basic math skills through a functional calculator, helpful visual tips, and trusted external math resources. This is an educational project created as a part of the Road To Hire Apprenticeship Program, showcasing skills in web development, problem solving, and responsive design.
+
 FEATURES: home page:
 * Includes a welcoming introduction to the Math Magic website
 * Contains an auto biography
@@ -34,5 +35,5 @@ RESPONSIVE DESIGN: Includes 3 major breakpoints to ensure accessibility across d
 PURPOSE OF THE PROJECT: created as part of a Road To Hire apprenticeship project to demonstrate:
 * soft skills through clean, readable documentation
 * technical skills in HTML, CSS, and JavaScript
-* ability yo build functional calculator
+* ability to build functional calculator
 * knowledge of responsive design and semantic structure
